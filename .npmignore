@@ -1,0 +1,60 @@
+# Test and development files
+test-local/
+test-package.sh
+TEST_LOCAL.md
+TEST_SUMMARY.md
+REFACTOR_STATUS.md
+ARCHITECTURE_RECOMMENDATIONS.md
+ARCHITECTURE_SUMMARY.md
+ADAPTER_GUIDE.md
+
+# Source files (only dist/ is published)
+src/
+*.ts
+*.tsx
+!*.d.ts
+
+# Configuration files
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+vitest.config.ts
+*.config.*
+
+# Development dependencies
+node_modules/
+.vscode/
+.idea/
+
+# Build artifacts (dist/ is included via files array)
+*.tsbuildinfo
+
+# Git
+.git/
+.gitignore
+
+# Documentation (README.md is included via files array)
+*.md
+!README.md
+
+# Examples
+example.tsx
+examples/
+
+# Test files
+**/__tests__/
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+test/
+tests/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+

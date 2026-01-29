@@ -1,0 +1,78 @@
+{
+  "name": "dynamic-formik-form",
+  "version": "1.0.0",
+  "description": "A production-ready, adapter-based React form library that generates dynamic forms from JSON configuration using Formik and Yup. Works with Material-UI, Bootstrap, Ant Design, or plain CSS.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "prepublishOnly": "npm run build",
+    "pack": "npm run build && npm pack",
+    "test:local": "npm run build && npm link"
+  },
+  "keywords": [
+    "react",
+    "formik",
+    "yup",
+    "forms",
+    "dynamic-forms",
+    "form-builder",
+    "dynamic-form",
+    "form-builder",
+    "json-schema",
+    "mui",
+    "bootstrap",
+    "adapter"
+  ],
+  "author": "Ambar Bidkar",
+  "license": "MIT",
+  "peerDependencies": {
+    "formik": "^2.0.0 || ^3.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "yup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/coverage-v8": "^1.6.1",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^23.2.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  } 
+}
