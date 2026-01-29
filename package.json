@@ -1,6 +1,6 @@
 {
   "name": "dynamic-formik-form",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A production-ready, adapter-based React form library that generates dynamic forms from JSON configuration using Formik and Yup. Works with Material-UI, Bootstrap, Ant Design, or plain CSS.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -74,5 +74,5 @@
   "repository": {
     "type": "git",
     "url": ""
-  } 
+  }
 }
