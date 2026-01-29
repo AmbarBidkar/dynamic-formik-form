@@ -778,8 +778,8 @@ Contributions are welcome! Please:
 
 ```bash
 # Clone repository
-git clone <repository-url>
-cd dynamic-form
+git clone https://github.com/AmbarBidkar/dynamic-formik-form.git
+cd dynamic-formik-form
 
 # Install dependencies
 npm install
